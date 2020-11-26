@@ -19,6 +19,9 @@
  	ao compilador 'Hey, essas funções aqui existem. 
  	Elas recebem argumentos de tais tipos e retornam tais valores, ok? 
  	É apenas isso que você precisa saber'.
+ 	Os protótipos das funções servem pra dizer que a função existe
+ 	e também definir a assinatura da função: 
+ 	tipo retorno, quantidade de parâmetros e tipo de cada parâmetro
 
  */
  
