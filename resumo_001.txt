@@ -1,0 +1,72 @@
+##### TIPOS DE DADOS #####
+
+Palavra Chave	Tipo
+----------------------------------------
+char			caracter
+int				inteiro
+float			real de precisão simples
+double			real de precisao dupla
+void			vazio (sem valor)
+
+
+Palavra chave		Tipo										Tamanho	Intervalo
+---------------------------------------------------------------------------------
+char				Caracter									1	-128 a 127
+signed char			Caractere com sinal							1	-128 a 127
+unsigned char		Caractere sem sinal							1	0 a 255
+Int					Inteiro										2	-32.768 a 32.767
+signed int			Inteiro com sinal							2	-32.768 a 32.767
+unsigned int		Inteiro sem sinal							2	0 a 65.535
+short int			Inteiro curto								2	-32.768 a 32 767
+signed short int	Inteiro curto com sinal						2	-32.768 a 32.767
+unsigned short int	Inteiro curto sem sinal						2	0 a 65.535
+long int			Inteiro long								4	-2.147.483.648 a 2.147.483.647
+signed long int		Inteiro longo com sinal						4	-2.147.483.648 a 2.147.483.647
+unsigned long int	Inteiro longo sem sinal						4	0 a 4.294.967.295
+float				Ponto flutuante com precisão simples		4	3.4 E-38 a 3.4E+38
+double				Ponto flutuante com precisão simples		8	1.7 E-308 a 1.7E+308
+long double			Ponto flutuante com precisão dupla longo	16	3.4E-4932 a 1.1E+4932
+
+
+#### ESTRUTURA BÁSICA #####
+[<definições de pré-processamento - cabeçalhos>]
+[<declaração das variáveis globais>]
+int main([<parâmetros>])
+{
+	return 0;
+}
+[
+	[<tipo>] funçãonome([<parâmetros>])
+	[<declaração de parâmetros>]
+	{
+		return valor;
+	}
+]
+
+- scanf("expressão de controle", lista_argumentos);
+	%c Permite que seja efetuada a leitura de apenas um caractere
+	%d Permite que seja efetuada a leitura de números inteiros decimais
+	%e Permite que seja efetuada a leitura de números em notação científica
+	%f Permite que seja efetuada a leitura de números reais.
+	%i Permite que seja efetuada a leitura de números inteiros longo
+	%o Permite que seja efetuada a leitura de números octais
+	%s Permite que seja efetuada a leitura de uma série de caracteres
+	%u Permite que seja efetuada a leitura de um número decimal sem sinal
+	%x Permite que seja efetuada a leitura de um número hexadecimal
+
+- printf()
+	%c Permite que seja efetuada a escrita de apenas um caractere
+	%d Permite que seja efetuada a escrita de números inteiros decimais
+	%e Permite que seja efetuada a escrita de números em notação científica
+	%f Permite que seja efetuada a escrita de números reais.
+	%g Permite que seja efetuada a escrita de %e ou %f no formato mais curto
+	%o Permite que seja efetuada a escrita de números octais
+	%s Permite que seja efetuada a escrita de uma série de caracteres.
+	%u Permite que seja efetuada a escrita de um número decimal sem sinal
+	%x Permite que seja efetuada a escrita de um número hexadecimal
+
+	int x = 10;
+	& -> Retorna o endereço na memória do operando.  ex: &x retorna o endereço de memória da variável x.
+	* -> Complemento de &. Retorna o valor da variável no endereço que o ponteiro armazena.
+		ex: m = &x; -> armazena endereço de memória da variável x.
+			q = *m; -> armazena o valor da variável no endereço armazenado no ponteiro.
